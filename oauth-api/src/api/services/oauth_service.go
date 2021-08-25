@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/federicoleon/golang-microservices/oauth-api/src/api/domain/oauth"
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
+	"golang-microservices/oauth-api/src/api/domain/oauth"
+	"golang-microservices/src/api/utils/errors"
 	"time"
 )
 

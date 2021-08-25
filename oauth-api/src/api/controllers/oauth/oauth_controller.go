@@ -1,11 +1,12 @@
 package oauth
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/federicoleon/golang-microservices/oauth-api/src/api/domain/oauth"
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
-	"github.com/federicoleon/golang-microservices/oauth-api/src/api/services"
+	"golang-microservices/oauth-api/src/api/domain/oauth"
+	"golang-microservices/oauth-api/src/api/services"
+	"golang-microservices/src/api/utils/errors"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func CreateAccessToken(c *gin.Context) {

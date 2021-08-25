@@ -1,7 +1,7 @@
 package oauth
 
 import (
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
+	"golang-microservices/src/api/utils/errors"
 )
 
 const (
@@ -21,4 +21,3 @@ func GetUserByUsernameAndPassword(username string, password string) (*User, erro
 	}
 	return user, nil
 }
-

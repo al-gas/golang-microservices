@@ -1,15 +1,16 @@
 package github_provider
 
 import (
-	"testing"
-	"github.com/stretchr/testify/assert"
-	"github.com/federicoleon/golang-microservices/src/api/domain/github"
-	"github.com/federicoleon/golang-microservices/src/api/clients/restclient"
-	"net/http"
 	"errors"
-	"os"
+	"golang-microservices/src/api/clients/restclient"
+	"golang-microservices/src/api/domain/github"
 	"io/ioutil"
+	"net/http"
+	"os"
 	"strings"
+	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestMain(m *testing.M) {

@@ -1,11 +1,12 @@
 package services
 
 import (
-	"testing"
-	"github.com/stretchr/testify/assert"
+	"golang-microservices/mvc/domain"
+	"golang-microservices/mvc/utils"
 	"net/http"
-	"github.com/federicoleon/golang-microservices/mvc/utils"
-	"github.com/federicoleon/golang-microservices/mvc/domain"
+	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 var (

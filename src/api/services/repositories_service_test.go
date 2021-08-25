@@ -1,16 +1,17 @@
 package services
 
 import (
-	"testing"
-	"github.com/federicoleon/golang-microservices/src/api/clients/restclient"
-	"os"
-	"github.com/federicoleon/golang-microservices/src/api/domain/repositories"
-	"github.com/stretchr/testify/assert"
-	"net/http"
+	"golang-microservices/src/api/clients/restclient"
+	"golang-microservices/src/api/domain/repositories"
+	"golang-microservices/src/api/utils/errors"
 	"io/ioutil"
+	"net/http"
+	"os"
 	"strings"
 	"sync"
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
+	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestMain(m *testing.M) {

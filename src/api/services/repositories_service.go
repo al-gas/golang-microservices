@@ -1,14 +1,14 @@
 package services
 
 import (
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
-	"github.com/federicoleon/golang-microservices/src/api/domain/repositories"
-	"github.com/federicoleon/golang-microservices/src/api/domain/github"
-	"sync"
+	"golang-microservices/src/api/config"
+	"golang-microservices/src/api/domain/github"
+	"golang-microservices/src/api/domain/repositories"
+	"golang-microservices/src/api/log/option_b"
+	"golang-microservices/src/api/providers/github_provider"
+	"golang-microservices/src/api/utils/errors"
 	"net/http"
-	"github.com/federicoleon/golang-microservices/src/api/log/option_b"
-	"github.com/federicoleon/golang-microservices/src/api/providers/github_provider"
-	"github.com/federicoleon/golang-microservices/src/api/config"
+	"sync"
 )
 
 type reposService struct{}
@@ -84,7 +84,7 @@ func (s *reposService) CreateRepos(requests []repositories.CreateRepoRequest) (r
 	successCreations := 0
 	for _, current := range result.Results {
 		if current.Response != nil {
-			successCreations ++
+			successCreations++
 		}
 	}
 	if successCreations == 0 {

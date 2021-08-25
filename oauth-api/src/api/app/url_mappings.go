@@ -1,8 +1,8 @@
 package app
 
 import (
-	"github.com/federicoleon/golang-microservices/src/api/controllers/polo"
-	"github.com/federicoleon/golang-microservices/oauth-api/src/api/controllers/oauth"
+	"golang-microservices/oauth-api/src/api/controllers/oauth"
+	"golang-microservices/src/api/controllers/polo"
 )
 
 func mapUrls() {

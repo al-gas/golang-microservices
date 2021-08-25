@@ -1,11 +1,12 @@
 package option_a
 
 import (
-	"github.com/Sirupsen/logrus"
-	"github.com/federicoleon/golang-microservices/src/api/config"
+	"fmt"
+	"golang-microservices/src/api/config"
 	"os"
 	"strings"
-	"fmt"
+
+	"github.com/Sirupsen/logrus"
 )
 
 var (

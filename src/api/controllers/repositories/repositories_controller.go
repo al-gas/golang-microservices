@@ -1,11 +1,12 @@
 package repositories
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/federicoleon/golang-microservices/src/api/domain/repositories"
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
-	"github.com/federicoleon/golang-microservices/src/api/services"
+	"golang-microservices/src/api/domain/repositories"
+	"golang-microservices/src/api/services"
+	"golang-microservices/src/api/utils/errors"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func CreateRepo(c *gin.Context) {

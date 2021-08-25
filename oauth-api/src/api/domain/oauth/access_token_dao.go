@@ -1,15 +1,15 @@
 package oauth
 
 import (
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
 	"fmt"
+	"golang-microservices/src/api/utils/errors"
 )
 
 var (
 	tokens = make(map[string]*AccessToken, 0)
 )
 
-func (at *AccessToken) Save() (errors.ApiError) {
+func (at *AccessToken) Save() errors.ApiError {
 	at.AccessToken = fmt.Sprintf("USR_%d", at.UserId)
 	tokens[at.AccessToken] = at
 	return nil

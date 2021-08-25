@@ -1,10 +1,11 @@
 package controllers
 
 import (
+	"golang-microservices/mvc/services"
+	"golang-microservices/mvc/utils"
 	"net/http"
 	"strconv"
-	"github.com/federicoleon/golang-microservices/mvc/services"
-	"github.com/federicoleon/golang-microservices/mvc/utils"
+
 	"github.com/gin-gonic/gin"
 )
 

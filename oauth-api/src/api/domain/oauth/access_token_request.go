@@ -1,7 +1,7 @@
 package oauth
 
 import (
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
+	"golang-microservices/src/api/utils/errors"
 	"strings"
 )
 

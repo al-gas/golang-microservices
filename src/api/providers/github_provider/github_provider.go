@@ -1,13 +1,13 @@
 package github_provider
 
 import (
-	"github.com/federicoleon/golang-microservices/src/api/domain/github"
-	"fmt"
-	"github.com/federicoleon/golang-microservices/src/api/clients/restclient"
-	"net/http"
-	"log"
 	"encoding/json"
+	"fmt"
+	"golang-microservices/src/api/clients/restclient"
+	"golang-microservices/src/api/domain/github"
 	"io/ioutil"
+	"log"
+	"net/http"
 )
 
 const (

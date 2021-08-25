@@ -1,18 +1,19 @@
 package repositories
 
 import (
-	"testing"
-	"net/http/httptest"
-	"net/http"
-	"strings"
-	"github.com/stretchr/testify/assert"
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
-	"github.com/federicoleon/golang-microservices/src/api/clients/restclient"
-	"io/ioutil"
-	"os"
-	"github.com/federicoleon/golang-microservices/src/api/domain/repositories"
 	"encoding/json"
-	"github.com/federicoleon/golang-microservices/src/api/utils/test_utils"
+	"golang-microservices/src/api/clients/restclient"
+	"golang-microservices/src/api/domain/repositories"
+	"golang-microservices/src/api/utils/errors"
+	"golang-microservices/src/api/utils/test_utils"
+	"io/ioutil"
+	"net/http"
+	"net/http/httptest"
+	"os"
+	"strings"
+	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 func TestMain(m *testing.M) {

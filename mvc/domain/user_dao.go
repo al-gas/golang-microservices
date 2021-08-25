@@ -2,14 +2,17 @@ package domain
 
 import (
 	"fmt"
-	"github.com/federicoleon/golang-microservices/mvc/utils"
-	"net/http"
+	"golang-microservices/mvc/utils"
 	"log"
+	"net/http"
 )
 
 var (
 	users = map[int64]*User{
-		123: {Id: 123, FirstName: "Fede", LastName: "Leon", Email: "myemail@gmail.com"},
+		123: {Id: 123, FirstName: "Alexey", LastName: "Gaskov", Email: "alexey.gaskov@gmail.com"},
+		124: {Id: 124, FirstName: "Paul", LastName: "McCartney", Email: "beatles_mc@gmail.com"},
+		125: {Id: 125, FirstName: "Demis", LastName: "Rousses", Email: "the_greek@gmail.com"},
+		126: {Id: 126, FirstName: "Joe", LastName: "Dassen", Email: "joe.gaskov@gmail.com"},
 	}
 
 	UserDao userDaoInterface

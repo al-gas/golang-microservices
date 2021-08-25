@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/federicoleon/golang-microservices/mvc/domain"
-	"github.com/federicoleon/golang-microservices/mvc/utils"
+	"golang-microservices/mvc/domain"
+	"golang-microservices/mvc/utils"
 	"net/http"
 )
 

@@ -1,12 +1,12 @@
 package main
 
 import (
-	"github.com/federicoleon/golang-microservices/src/api/domain/repositories"
-	"fmt"
-	"os"
 	"bufio"
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
-	"github.com/federicoleon/golang-microservices/src/api/services"
+	"fmt"
+	"golang-microservices/src/api/domain/repositories"
+	"golang-microservices/src/api/services"
+	"golang-microservices/src/api/utils/errors"
+	"os"
 	"sync"
 )
 

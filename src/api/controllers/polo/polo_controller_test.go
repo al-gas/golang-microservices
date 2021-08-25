@@ -1,10 +1,11 @@
 package polo
 
 import (
-	"testing"
-	"net/http/httptest"
+	"golang-microservices/src/api/utils/test_utils"
 	"net/http"
-	"github.com/federicoleon/golang-microservices/src/api/utils/test_utils"
+	"net/http/httptest"
+	"testing"
+
 	"github.com/stretchr/testify/assert"
 )
 

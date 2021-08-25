@@ -1,16 +1,17 @@
 package repositories
 
 import (
-	"testing"
-	"net/http"
-	"strings"
-	"net/http/httptest"
-	"github.com/stretchr/testify/assert"
-	"github.com/federicoleon/golang-microservices/src/api/utils/errors"
-	"github.com/federicoleon/golang-microservices/src/api/utils/test_utils"
-	"github.com/federicoleon/golang-microservices/src/api/domain/repositories"
 	"encoding/json"
-	"github.com/federicoleon/golang-microservices/src/api/services"
+	"golang-microservices/src/api/domain/repositories"
+	"golang-microservices/src/api/services"
+	"golang-microservices/src/api/utils/errors"
+	"golang-microservices/src/api/utils/test_utils"
+	"net/http"
+	"net/http/httptest"
+	"strings"
+	"testing"
+
+	"github.com/stretchr/testify/assert"
 )
 
 var (
